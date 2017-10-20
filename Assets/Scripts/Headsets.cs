@@ -6,4 +6,10 @@ using UnityEngine;
 [System.Serializable]
 public class Headsets : MonoBehaviour {
     public string headsetName;
+    public float headsetCost;
+    public bool sixDOF;
+    public bool controllerThreeDOF;
+    public bool controllersSixDOF;
+    public int headsetFOV;
+    public float trackableArea;
 }
