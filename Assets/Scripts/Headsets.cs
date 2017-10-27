@@ -12,4 +12,9 @@ public class Headsets : MonoBehaviour {
     public bool controllersSixDOF;
     public int headsetFOV;
     public float trackableArea;
+
+    void Start()
+    {
+        gameObject.tag = "Headset";
+    }
 }
