@@ -18,7 +18,7 @@ public class HeadsetSpin : MonoBehaviour {
     {
         foreach (GameObject headset in headsets)
         {
-            headset.transform.Rotate(Vector3.up, spinRate * Time.deltaTime);
+            headset.transform.Rotate(Vector3.up * spinRate * Time.deltaTime, Space.World);
         }
 	}
 }
