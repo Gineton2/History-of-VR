@@ -7985,6 +7985,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 782886757}
+  - component: {fileID: 782886758}
   m_Layer: 0
   m_Name: Cardboard
   m_TagString: Headset
@@ -8014,6 +8015,24 @@ Transform:
   m_Father: {fileID: 1863826290}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &782886758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 782886756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60311c5734a304f478067665099d52a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headsetName: Cardboard
+  headsetCost: 10
+  sixDOF: 0
+  controllerThreeDOF: 0
+  controllersSixDOF: 0
+  headsetFOV: 80
+  trackableArea: 0
 --- !u!1 &787767573
 GameObject:
   m_ObjectHideFlags: 0
@@ -12957,6 +12976,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1331673481}
+  - component: {fileID: 1353594404}
   m_Layer: 0
   m_Name: Oculus Rift
   m_TagString: Headset
@@ -12964,6 +12984,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1353594404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1353594403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60311c5734a304f478067665099d52a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  headsetName: Oculus Rift
+  headsetCost: 400
+  sixDOF: 1
+  controllerThreeDOF: 0
+  controllersSixDOF: 1
+  headsetFOV: 110
+  trackableArea: 3
 --- !u!1 &1356566660
 GameObject:
   m_ObjectHideFlags: 0
