@@ -31,21 +31,21 @@ public class Headsets : MonoBehaviour {
         headsetNameText.text = headsetName.ToString();
 
         // Set cost text
-        headsetCostText.text = "$" + headsetCost.ToString();
+        headsetCostText.text = "Cost: $" + headsetCost.ToString() + ".";
 
         // Set controller text
         if (controllerThreeDOF) {
-            controllerText.text = "Three degrees of freedom controller.";
+            controllerText.text = "Controller with rotational tracking";
         }
         else if (controllersSixDOF) {
-            controllerText.text = "Six degrees of freedom controller.";
+            controllerText.text = "Controllers with positional and rotational tracking.";
         }
         else {
             controllerText.text = "No controller.";
         }
 
         // Set FOV text
-        headsetFOVText.text = headsetFOV.ToString() + "°";
+        headsetFOVText.text = "FOV: " + headsetFOV.ToString() + "°.";
 
         // Set trackable area and DoF text
         if (trackingArea <= 0) {
@@ -53,8 +53,8 @@ public class Headsets : MonoBehaviour {
         }
         else {
             dofText.text = 
-                "Headset positional and rotational tracking.\\n" +
-                "Tracking area: " + trackingArea.ToString() + ".";
+                "Headset positional and rotational tracking.\n" +
+                "Tracking area: " + trackingArea.ToString() + " m².";
         }
     }
 }
