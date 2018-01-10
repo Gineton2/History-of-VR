@@ -12,12 +12,14 @@ public class Headsets : MonoBehaviour {
     public bool controllersSixDOF;
     public int headsetFOV;
     public float trackingArea;
+    public bool baseStations;
 
     public Text headsetNameText;
     public Text headsetCostText;
     public Text controllerText;
     public Text headsetFOVText;
     public Text dofText;
+    public Text baseStationsText;
 
     void Start() {
         gameObject.tag = "Headset";
@@ -55,6 +57,11 @@ public class Headsets : MonoBehaviour {
             dofText.text = 
                 "Headset positional and rotational tracking.\n" +
                 "Tracking area: " + trackingArea.ToString() + " m².";
+        }
+
+        // Basestation text
+        if (baseStations) {
+            baseStationsText.text = "Uses basestations for tracking.";  
         }
     }
 }
