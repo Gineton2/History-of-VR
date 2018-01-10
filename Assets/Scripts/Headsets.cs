@@ -37,10 +37,10 @@ public class Headsets : MonoBehaviour {
 
         // Set controller text
         if (controllerThreeDOF) {
-            controllerText.text = "Controller with rotational tracking";
+            controllerText.text = "3DOF Controllers.";
         }
         else if (controllersSixDOF) {
-            controllerText.text = "Controllers with positional and rotational tracking.";
+            controllerText.text = "6DOF Controllers.";
         }
         else {
             controllerText.text = "No controller.";
@@ -51,11 +51,11 @@ public class Headsets : MonoBehaviour {
 
         // Set trackable area and DoF text
         if (trackingArea <= 0) {
-            dofText.text = "Headset rotational tracking only.";
+            dofText.text = "3DOF Headset tracking.";
         }
         else {
             dofText.text = 
-                "Headset positional and rotational tracking.\n" +
+                "6DOF Headset tracking.\n" +
                 "Tracking area: " + trackingArea.ToString() + " m².";
         }
 
