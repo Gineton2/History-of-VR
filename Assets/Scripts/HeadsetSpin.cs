@@ -29,5 +29,8 @@ public class HeadsetSpin : MonoBehaviour {
         foreach (GameObject controller in threeDofControllers) {
             //controller.transform.Rotate(Vector)
         }
+        foreach (GameObject controller in sixDofControllers) {
+            //controller.transform.Rotate(Vector)
+        }
 	}
 }
